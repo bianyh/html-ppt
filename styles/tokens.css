@@ -1,0 +1,154 @@
+:root {
+  --ink: #11130f;
+  --ink-soft: #1a1c17;
+  --paper: #f2f0e9;
+  --paper-muted: #d6d4ca;
+  --lime: #c7f36a;
+  --muted: #85877f;
+  --line: rgb(242 240 233 / 14%);
+  --sans: Arial, "PingFang SC", "Microsoft YaHei", "Noto Sans SC", sans-serif;
+  --body: var(--sans);
+  --mono: "SFMono-Regular", Consolas, "Liberation Mono", monospace;
+  --stage-scale: 1;
+  --slide-width: 1600;
+  --slide-height: 900;
+  --page-x: 100px;
+  --page-y: 120px;
+  --space-unit: 8px;
+  --radius-card: 8px;
+  --color-accent: var(--lime);
+  --color-text: var(--paper);
+  --color-surface: var(--ink-soft);
+  --color-border: var(--line);
+}
+
+/* A second theme changes the shared components without changing their markup. */
+[data-theme="studio"] {
+  --ink: #f4f2ea;
+  --ink-soft: #eae8df;
+  --paper: #17392f;
+  --paper-muted: #4d655b;
+  --lime: #15745b;
+  --muted: #657b70;
+  --line: rgb(23 57 47 / 17%);
+  --radius-card: 12px;
+}
+
+/* Academic blue theme distilled from the supplied RUC / DEMI PPT template. */
+[data-theme="ruc-demi"] {
+  --ink: #ffffff;
+  --ink-soft: #f5f8fb;
+  --paper: #15191f;
+  --paper-muted: #525c67;
+  --lime: #16bdda;
+  --muted: #78828d;
+  --line: rgb(21 25 31 / 14%);
+  --ruc-blue: #0f4c9b;
+  --ruc-blue-bright: #218bd1;
+  --ruc-cyan: #13cbd1;
+  --ruc-red: #8e1538;
+  --radius-card: 0;
+}
+
+.presentation[data-theme="studio"] {
+  background: #eae8df;
+  color: #17392f;
+}
+.presentation[data-theme="studio"] .control-bar {
+  background: #f4f2ea;
+  border-color: rgb(23 57 47 / 16%);
+}
+.presentation[data-theme="studio"] .control-brand {
+  color: #17392f;
+}
+.presentation[data-theme="studio"] .control-brand small,
+.presentation[data-theme="studio"] .control-button {
+  color: #657b70;
+}
+.presentation[data-theme="studio"] .slide-counter {
+  color: #7d9187;
+}
+.presentation[data-theme="studio"] .slide-counter span:first-child {
+  color: #17392f;
+}
+.presentation[data-theme="studio"] .progress-track {
+  background: #d0d1c7;
+}
+.presentation[data-theme="studio"] .nav-button {
+  border-color: #9ca99c;
+  color: #17392f;
+}
+.presentation[data-theme="studio"] .nav-button:hover:not(:disabled) {
+  background: #e5e9dd;
+}
+.presentation[data-theme="studio"] .overview {
+  --ink: #11130f;
+  --ink-soft: #1a1c17;
+  --paper: #f2f0e9;
+  --paper-muted: #d6d4ca;
+  --lime: #c7f36a;
+  --muted: #85877f;
+  --line: rgb(242 240 233 / 14%);
+}
+.presentation[data-theme="studio"] .notes-panel {
+  --paper: #f2f0e9;
+  --paper-muted: #d6d4ca;
+  --lime: #c7f36a;
+  --muted: #85877f;
+  --line: rgb(242 240 233 / 14%);
+}
+
+.presentation[data-theme="ruc-demi"] {
+  background: #e8edf2;
+  color: #15191f;
+}
+.presentation[data-theme="ruc-demi"] .control-bar {
+  background: #101820;
+  border-color: rgb(255 255 255 / 13%);
+}
+.presentation[data-theme="ruc-demi"] .control-brand,
+.presentation[data-theme="ruc-demi"] .control-brand a {
+  color: #edf7fb;
+}
+.presentation[data-theme="ruc-demi"] .control-brand small,
+.presentation[data-theme="ruc-demi"] .control-button,
+.presentation[data-theme="ruc-demi"] .control-bar .deck-link {
+  color: #a9c1cc;
+}
+.presentation[data-theme="ruc-demi"] .slide-counter {
+  color: #8da4af;
+}
+.presentation[data-theme="ruc-demi"] .slide-counter span:first-child {
+  color: #f1f8fa;
+}
+.presentation[data-theme="ruc-demi"] .progress-track {
+  background: #304550;
+}
+.presentation[data-theme="ruc-demi"] .progress-fill {
+  background: var(--lime);
+  box-shadow: 0 0 10px rgb(22 189 218 / 35%);
+}
+.presentation[data-theme="ruc-demi"] .nav-button {
+  border-color: #45616e;
+  color: #e8f7fb;
+}
+.presentation[data-theme="ruc-demi"] .nav-button:hover:not(:disabled) {
+  background: #183541;
+  border-color: var(--lime);
+}
+.presentation[data-theme="ruc-demi"] .overview {
+  --ink: #111a20;
+  --ink-soft: #1a2a33;
+  --paper: #f2fbfd;
+  --paper-muted: #b7cbd2;
+  --lime: #16bdda;
+  --muted: #8da4af;
+  --line: rgb(242 251 253 / 15%);
+}
+.presentation[data-theme="ruc-demi"] .notes-panel {
+  --paper: #f2fbfd;
+  --paper-muted: #b7cbd2;
+  --lime: #16bdda;
+  --muted: #8da4af;
+  --line: rgb(242 251 253 / 15%);
+}

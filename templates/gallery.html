@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Field Notes · 网页幻灯片</title>
+    <meta
+      name="description"
+      content="用 coding agent 制作可交互的网页幻灯片。选择一份演示，开始体验。"
+    />
+    <link rel="stylesheet" href="styles/gallery.css" />
+  </head>
+  <body>
+    <main class="gallery">
+      <div class="gallery-top">
+        <a href="gallery.html">✳ FIELD NOTES</a
+        ><span>HTML PRESENTATION TOOLKIT / V0.1</span>
+      </div>
+      <header>
+        <p>IDEAS, WITH ROOM TO MOVE.</p>
+        <h1>让想法，<br />拥有自己的<span>表达方式。</span></h1>
+        <div>
+          一套共享的播放体验，三种不同的叙事。<br />选择演示，探索网页能带来的更多可能。
+        </div>
+      </header>
+      <section class="gallery-grid" aria-label="演示稿列表">{{cards}}</section>
+      <footer>
+        <span>← → 翻页 · O 目录 · N 备注 · F 全屏 · ? 快捷键</span
+        ><span>BUILT FOR HUMAN × AGENT</span>
+      </footer>
+    </main>
+  </body>
+</html>

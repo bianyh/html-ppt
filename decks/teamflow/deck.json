@@ -1,0 +1,18 @@
+{
+  "id": "teamflow",
+  "title": "Teamflow · 让协作自然发生",
+  "description": "一个虚构协作产品的发布演示，用浅色主题与交互计算器验证组件复用",
+  "brand": "TEAMFLOW / PRODUCT",
+  "theme": "studio",
+  "output": "teamflow.html",
+  "styles": ["decks/teamflow/deck.css"],
+  "scripts": ["decks/teamflow/interactions.js"],
+  "slides": [
+    "slides/01-launch.html",
+    "slides/02-problem.html",
+    "slides/03-workflow.html",
+    "slides/04-calculator.html",
+    "slides/05-rollout.html",
+    "slides/06-close.html"
+  ]
+}

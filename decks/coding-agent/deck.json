@@ -1,0 +1,20 @@
+{
+  "id": "coding-agent",
+  "title": "让想法，开始运行",
+  "description": "一份关于 Coding Agent 与人机协作的交互式短讲",
+  "brand": "FIELD NOTES / 01",
+  "theme": "field",
+  "output": "coding-agent.html",
+  "styles": ["decks/coding-agent/deck.css", "decks/coding-agent/overrides.css"],
+  "scripts": ["decks/coding-agent/interactions.js"],
+  "slides": [
+    "slides/01-intent.html",
+    "slides/02-gap.html",
+    "slides/03-loop.html",
+    "slides/04-live-demo.html",
+    "slides/05-craft.html",
+    "slides/06-frontier.html",
+    "slides/07-practice.html",
+    "slides/08-next.html"
+  ]
+}

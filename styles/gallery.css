@@ -1,0 +1,181 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  background: #11130f;
+  color: #f2f0e9;
+  font-family: Arial, "PingFang SC", "Microsoft YaHei", sans-serif;
+}
+a {
+  color: inherit;
+}
+a:focus-visible {
+  outline: 3px solid #c7f36a;
+  outline-offset: 5px;
+}
+.gallery {
+  max-width: 1240px;
+  margin: auto;
+  padding: 40px 48px;
+}
+.gallery-top {
+  display: flex;
+  justify-content: space-between;
+  color: #85877f;
+  font: 11px monospace;
+  letter-spacing: 0.1em;
+}
+.gallery-top a {
+  text-decoration: none;
+  color: #c7f36a;
+}
+header {
+  padding: 85px 0 55px;
+}
+header > p {
+  color: #a3b58b;
+  font: 11px monospace;
+  letter-spacing: 0.18em;
+}
+h1 {
+  font-size: clamp(32px, 5vw, 60px);
+  line-height: 1.3;
+  letter-spacing: -0.04em;
+  font-weight: 700;
+  margin: 20px 0;
+}
+h1 span {
+  color: #c7f36a;
+}
+header > div {
+  color: #a7aaa0;
+  font-size: 15px;
+  line-height: 1.9;
+}
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 28px;
+}
+.gallery-card {
+  display: block;
+  text-decoration: none;
+  border: 1px solid #363a30;
+  border-radius: 9px;
+  overflow: hidden;
+  transition:
+    transform 0.2s,
+    border-color 0.2s;
+}
+.gallery-card:hover {
+  transform: translateY(-5px);
+  border-color: #c7f36a;
+}
+.gallery-art {
+  height: 255px;
+  position: relative;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: #1c2416;
+}
+.gallery-art span {
+  position: absolute;
+  top: 25px;
+  font: 10px monospace;
+  letter-spacing: 0.1em;
+  color: #9baa86;
+}
+.gallery-art b {
+  position: relative;
+  max-width: 80%;
+  font-size: 33px;
+  font-weight: 650;
+  letter-spacing: -0.03em;
+  color: #c7f36a;
+}
+.gallery-art i {
+  position: absolute;
+  right: 25px;
+  bottom: 15px;
+  font-size: 90px;
+  font-style: normal;
+  color: #c7f36a;
+  opacity: 0.2;
+}
+.gallery-art[data-theme="studio"] {
+  background: #f4f2ea;
+}
+.gallery-art[data-theme="studio"] b {
+  color: #17392f;
+}
+.gallery-art[data-theme="studio"] i {
+  color: #15745b;
+}
+.gallery-art[data-theme="studio"] span {
+  color: #657b70;
+}
+.gallery-art[data-theme="ruc-demi"] {
+  background: #0f4c9b url("../decks/ruc-demi/assets/blue-polygon.png") center / cover;
+}
+.gallery-art[data-theme="ruc-demi"] b {
+  color: #ffffff;
+}
+.gallery-art[data-theme="ruc-demi"] i {
+  color: #8cecf2;
+}
+.gallery-art[data-theme="ruc-demi"] span {
+  color: #c9f2f7;
+}
+.gallery-description {
+  padding: 25px 30px 29px;
+}
+.gallery-description h2 {
+  font-size: 19px;
+  margin: 0 0 13px;
+}
+.gallery-description p {
+  min-height: 48px;
+  color: #9c9f95;
+  font-size: 13px;
+  line-height: 1.8;
+  margin: 0 0 15px;
+}
+.gallery-description > span {
+  color: #c7f36a;
+  font-size: 12px;
+}
+footer {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  margin-top: 55px;
+  padding-top: 20px;
+  border-top: 1px solid #2c3027;
+  color: #7c8074;
+  font-size: 10px;
+}
+@media (max-width: 680px) {
+  .gallery {
+    padding: 25px 22px;
+  }
+  .gallery-top > span {
+    display: none;
+  }
+  header {
+    padding-top: 60px;
+  }
+  .gallery-grid {
+    grid-template-columns: 1fr;
+  }
+  footer {
+    flex-direction: column;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  * {
+    transition: none !important;
+  }
+}

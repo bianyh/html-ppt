@@ -1,0 +1,206 @@
+/* This deck adds only product-specific visuals; layouts and cards are shared. */
+.team-tags {
+  display: flex;
+  gap: 12px;
+  margin-top: 32px;
+}
+.team-board {
+  transform: rotate(2deg);
+}
+.board-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 28px;
+  color: var(--paper);
+  font-size: 24px;
+  font-weight: 650;
+}
+.task-row {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 23px 0;
+  border-top: 1px solid var(--line);
+}
+.task-check {
+  display: grid;
+  place-items: center;
+  width: 32px;
+  height: 32px;
+  flex-shrink: 0;
+  border-radius: 50%;
+  background: var(--lime);
+  color: var(--ink);
+  font: normal 16px var(--body);
+}
+.task-check--open {
+  border: 1px solid var(--lime);
+  color: var(--lime);
+  background: transparent;
+}
+.task-row div {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.task-row b {
+  font-size: 21px;
+  color: var(--paper);
+}
+.task-row small {
+  font-size: 16px;
+  color: var(--muted);
+}
+.avatar {
+  display: grid;
+  place-items: center;
+  width: 34px;
+  height: 34px;
+  margin-left: auto;
+  border-radius: 50%;
+  background: #dddac8;
+  color: #615e4f;
+  font-size: 14px;
+}
+.board-progress {
+  display: flex;
+  justify-content: space-between;
+  color: var(--muted);
+  font-size: 15px;
+  margin: 18px 0 12px;
+}
+.board-track {
+  height: 7px;
+  border-radius: 5px;
+  background: var(--line);
+  overflow: hidden;
+}
+.board-track i {
+  display: block;
+  width: 66.66%;
+  height: 100%;
+  background: var(--lime);
+}
+.message-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 28px;
+}
+.message-stack span {
+  width: max-content;
+  padding: 12px 18px;
+  background: #f4f2ea;
+  border-radius: 7px;
+  color: var(--muted);
+  font-size: 18px;
+}
+.message-stack span:nth-child(2) {
+  margin-left: 100px;
+  transform: rotate(2deg);
+}
+.task-summary {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  margin-top: 35px;
+  font-size: 18px;
+}
+.task-summary span {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 18px;
+  border-bottom: 1px solid var(--line);
+  color: var(--muted);
+}
+.task-summary b {
+  color: var(--paper);
+  font-weight: 500;
+}
+.workflow-glyph {
+  display: grid;
+  place-items: center;
+  width: 92px;
+  height: 92px;
+  margin: 35px 0;
+  border: 1px solid var(--line);
+  border-radius: 50%;
+  color: var(--lime);
+  font-size: 48px;
+}
+.slider-label {
+  display: flex;
+  justify-content: space-between;
+  color: var(--paper);
+  font-size: 24px;
+}
+.slider-label output {
+  color: var(--lime);
+  font-weight: 700;
+}
+#team-size {
+  width: 100%;
+  margin: 35px 0 10px;
+  accent-color: var(--lime);
+  cursor: pointer;
+}
+.slider-scale {
+  display: flex;
+  justify-content: space-between;
+  color: var(--muted);
+  font-size: 15px;
+}
+.estimate-bars {
+  margin-top: 35px;
+}
+.estimate-bars > div:not(.estimate-track) {
+  display: flex;
+  justify-content: space-between;
+  color: var(--paper-muted);
+  font-size: 18px;
+}
+.estimate-bars b {
+  color: var(--paper);
+  font-weight: 600;
+}
+.estimate-track {
+  height: 14px;
+  margin: 12px 0 25px;
+  background: var(--line);
+  border-radius: 4px;
+  overflow: hidden;
+}
+.estimate-track span {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: #bd8867;
+}
+.estimate-track--after span {
+  width: 25%;
+  background: var(--lime);
+}
+.team-close {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+  padding-left: 85px;
+}
+.close-symbol {
+  font: 200 200px/1 var(--sans);
+  color: var(--lime);
+  margin-bottom: 20px;
+}
+@media (max-width: 760px) {
+  .team-tags {
+    flex-wrap: wrap;
+  }
+  .team-close {
+    padding-left: 10px;
+  }
+  .close-symbol {
+    font-size: 130px;
+  }
+}

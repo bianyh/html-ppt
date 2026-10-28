@@ -1,0 +1,54 @@
+<section
+  id="calculator"
+  class="slide"
+  data-title="看看重复同步，占用了多少时间"
+  data-notes="邀请观众调整团队人数。这个计算器只用于说明一组假设：每人每周同步六次，分散同步每次十二分钟，结构化更新每次三分钟。它不是实际产品效果或实测收益。"
+  aria-label="看看重复同步，占用了多少时间"
+>
+  <div class="deck-shell">
+    <div class="deck-kicker">
+      <span>03 / TRY IT</span><span>交互式情景估算</span>
+    </div>
+    <header>
+      <p class="deck-eyebrow">MAKE THE TRADE-OFF VISIBLE</p>
+      <h2 class="deck-title">
+        重复同步，<span class="deck-accent">占用了多少时间？</span>
+      </h2>
+    </header>
+    <div class="layout-split">
+      <div class="c-card" data-slide-interactive>
+        <label class="slider-label" for="team-size"
+          >团队人数
+          <output id="team-size-value" for="team-size">8 人</output></label
+        >
+        <input
+          id="team-size"
+          type="range"
+          min="2"
+          max="30"
+          value="8"
+          aria-describedby="estimate-assumptions"
+        />
+        <div class="slider-scale"><span>2 人</span><span>30 人</span></div>
+        <div class="estimate-bars" aria-label="每周同步总人时对比">
+          <div><span>分散同步</span><b id="before-value">9.6 小时</b></div>
+          <div class="estimate-track"><span></span></div>
+          <div><span>结构化更新</span><b id="after-value">2.4 小时</b></div>
+          <div class="estimate-track estimate-track--after"><span></span></div>
+        </div>
+      </div>
+      <div class="c-metric" aria-live="polite" aria-atomic="true">
+        <span class="c-metric__value" id="saved-value">7.2</span
+        ><span class="c-metric__label">小时 / 周，可能重新分配给专注工作</span
+        ><span class="c-metric__note">根据当前情景假设计算的总人时差。</span>
+      </div>
+    </div>
+    <p class="c-source" id="estimate-assumptions">
+      情景假设：每人每周同步 6 次；分散同步 12 分钟 / 次，结构化更新 3 分钟 /
+      次。仅作说明，非实测数据或效果承诺。
+    </p>
+    <div class="deck-footer">
+      <span>MOVE THE SLIDER TO EXPLORE</span><span>04</span>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,4 @@
+/* Content fit override for the mock product preview heading. */
+.slide-demo .demo-heading h2 {
+  font-size: 44px;
+}

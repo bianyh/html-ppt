@@ -1,0 +1,21 @@
+/* Small content rules shared by decks and referenced in component examples. */
+.deck-shell {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 62px 95px 52px;
+}
+.deck-shell > header {
+  flex: 0 0 auto;
+}
+.deck-shell > .layout-split,
+.deck-shell > .layout-cards,
+.deck-shell > .layout-compare {
+  flex: 1 1 0;
+  min-height: 0;
+}
+.deck-shell .deck-footer {
+  min-height: 15px;
+}

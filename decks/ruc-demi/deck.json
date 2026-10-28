@@ -1,0 +1,16 @@
+{
+  "id": "ruc-demi",
+  "title": "RUC · DEMI 学术汇报模板",
+  "description": "从小组会 PPT 提炼出的网页主题：品牌封面、目录、内容页和章节分隔页都保持可编辑。",
+  "brand": "RUC / DEMI TEMPLATE",
+  "theme": "ruc-demi",
+  "output": "ruc-demi.html",
+  "styles": ["decks/ruc-demi/deck.css"],
+  "scripts": [],
+  "slides": [
+    "slides/01-cover.html",
+    "slides/02-agenda.html",
+    "slides/03-content.html",
+    "slides/04-section.html"
+  ]
+}

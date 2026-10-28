@@ -1,0 +1,104 @@
+/* Runtime rules apply equally to every deck. */
+.slide[aria-hidden="true"] {
+  pointer-events: none;
+}
+.slide[aria-hidden="false"] {
+  pointer-events: auto;
+}
+.slide:focus {
+  outline: none;
+}
+.control-brand a {
+  color: inherit;
+  text-decoration: none;
+}
+.control-brand a:hover {
+  color: var(--lime);
+}
+.control-bar .deck-link {
+  color: #aeb0a6;
+  font-size: 10px;
+  text-decoration: none;
+  padding-right: 10px;
+}
+.control-bar .deck-link:hover {
+  color: var(--lime);
+}
+.overview {
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+}
+.overview:not(.is-open) {
+  display: none;
+}
+.overview-grid {
+  flex: 1;
+  align-content: start;
+  padding-bottom: 25px;
+}
+.overview-foot {
+  position: static;
+  margin-top: auto;
+  padding-top: 10px;
+}
+.overview-card {
+  aspect-ratio: 16 / 10;
+}
+.overview-preview {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1600px;
+  height: 900px;
+  transform-origin: 0 0;
+  overflow: hidden;
+  pointer-events: none;
+}
+.overview-preview .slide {
+  visibility: visible;
+  opacity: 1;
+  transform: none;
+}
+.overview-preview *,
+.overview-preview *::before,
+.overview-preview *::after {
+  animation: none !important;
+  transition: none !important;
+}
+.overview-card-label {
+  padding-top: 36px;
+}
+.overview-card-label b {
+  color: #f2f0e9;
+}
+.notes-panel small {
+  line-height: 1.6;
+}
+.help-hint {
+  white-space: normal;
+  text-align: center;
+  max-width: 90vw;
+  width: max-content;
+  line-height: 1.8;
+}
+.stage-wrap.is-blacked-out {
+  background: #000;
+}
+.stage-wrap.is-blacked-out .stage {
+  visibility: hidden;
+}
+@media (max-width: 760px) {
+  .control-brand {
+    display: none;
+  }
+  .control-bar .deck-link {
+    font-size: 9px;
+  }
+  .overview {
+    min-height: 0;
+  }
+  .overview-card-label b {
+    font-size: 10px;
+  }
+}

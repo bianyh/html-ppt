@@ -1,0 +1,25 @@
+{
+  "name": "field-notes-html-slides",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Agent-friendly HTML presentations with a shared browser runtime",
+  "type": "module",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "dev": "node scripts/serve.mjs --watch",
+    "preview": "node scripts/serve.mjs",
+    "check": "node scripts/check.mjs",
+    "pretest": "npm run build && npm run check",
+    "test": "playwright test",
+    "test:ui": "playwright test --ui",
+    "package": "node scripts/build.mjs --out dist",
+    "new:deck": "node scripts/new-deck.mjs"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.64.1",
+    "parse5": "8.0.1"
+  }
+}
